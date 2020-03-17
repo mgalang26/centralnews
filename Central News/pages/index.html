@@ -1,0 +1,138 @@
+<html>
+<head>
+ 	<title>News</title>
+	<meta http-equiv="refresh" content="">
+	<link rel="stylesheet" type="text/css" href="../css/index-stylesheet.css">
+</head>
+<body>
+	<div class="peak">
+		<h1>BREAKING NEWS</h1>
+		<p>COVID-19 Infects 71,000, death toll now at 1,500</p>
+	</div>
+	<div class="topnav">
+		<!--<img class="navlogo" src="../cn-logo/logo.jpg">--!>
+		<ul class="navbar">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="products.html">Local</a></li>
+			<li><a href="menu.html">International</a></li>
+			<li><a href="location.html">Weather</a></li>
+			<li><a href="history.html">Economics</a></li>			
+			<li><a href="contact.html">About</a></li>
+			<!--<li style="float: right;"><a class="order" href="sign-in.html" target="blank">Sign in</a></li>-->
+			<li style="float: right;"><button class="button" onclick="openWin()">SIGN IN</button></li>
+		</ul>	
+	</div>
+	<div class="wrapper">
+		<div class="slides">
+			<!--<img src="../images/cake.jpg" width="950px">-->
+			<!-- Slideshow container -->
+			<div class="slideshow-container">
+
+			  <!-- Full-width images with number and caption text -->
+			  <div class="mySlides fade">
+			   
+			    <img src="../images/pic1.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides fade">
+			    
+			    <img src="../images/pic2.jpg" style="width:100%">
+			    
+			  </div>
+
+			  <div class="mySlides fade">
+			    
+			    <img src="../images/pic3.jpg" style="width:100%">
+			    
+			  </div>
+
+			</div>
+			<br>
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</div>
+		<div class="topheadlines">
+			Latest Headlines
+		</div>
+		<div class="headlines">
+			<!-- <img src="../images/pastries-icon.jpg" style="height: 300px; width: 300px;">-->
+			<ul style="text-transform: capitalize;">
+				<li>WHO Names novel coronavirus COVID-19</li>
+				<li>DOH Closely monitors 30 OFW quarantined</li>
+				<li>HongKong tops COVID-19 Cases reaching upto 45</li>
+				<li>Japan Reported 45 confirmed cases of 2019 nCov-ARD</li>
+				<li>Gov't sees Caballo Island and Fort Magsaysay as quarantine area</li>
+			</ul>
+		</div>
+		<div class="mychaa">
+			<img src="../images/milktea-icon.jpg" style="height: 300px; width: 300px;">
+			mychaa
+		</div>
+		<div class="footline">
+			<div class="nest">
+			<div>
+			<img src="../images/milktea-tn.jpg" style="height: 300px; width: 300px; float: left;">
+			</div>
+			<div>
+			<img src="../images/fruittea-tn.jpg" style="height: 300px; width: 280px; float: left;">
+			</div>
+			<div>
+			<img src="../images/pizza-tn.jpg" style="height: 300px; width: 300px; float: left;">
+			</div>
+		</div>
+		</div>
+		<div class="ads">
+
+		</div>
+	</div>
+		<div class="ticker">
+			<marquee>
+			BREAKING &nbsp • &nbsp Coronavirus Continues to Spread worldwide &nbsp • &nbsp WHO declares public health emergency of international concern over 2019 nCov-ARD &nbsp • &nbsp DepEd orders cancellation of school activities involving mass gatherings  &nbsp • &nbsp ATHS suspends family days celebration 2020 &nbsp • &nbsp BREAKING &nbsp • &nbsp Coronavirus Continues to Spread worldwide &nbsp • &nbsp WHO declares public health emergency of international concern over 2019 nCov-ARD &nbsp • &nbsp DepEd orders cancellation of school activities involving mass gatherings  &nbsp • &nbsp ATHS suspends family days celebration 2020 &nbsp • &nbsp BREAKING &nbsp • &nbsp Coronavirus Continues to Spread worldwide &nbsp • &nbsp WHO declares public health emergency of international concern over 2019 nCov-ARD &nbsp • &nbsp DepEd orders cancellation of school activities involving mass gatherings  &nbsp • &nbsp ATHS suspends family days celebration 2020 
+			</marquee>
+		</div>
+	<div class="footer">
+
+		<div>
+			<img src="../images/phflag.png" style="height: 25px; width: *; float: right;">
+		</div>
+		<div>
+			<a href="https://www.facebook.com/MariaCeciliacakes/" target="blank"><img src="../images/fb-icon.png" style="height: 25px; width: *; float: left;"></a>
+		</div>
+		<div style="text-align: center;">
+		©2020 The Philippine News Channel (PNC). All Rights Reserved.
+		</div>
+	</div>
+	<br><br>
+</body>
+<script>
+var myWindow;
+
+function openWin() {
+  myWindow = window.open("sign-in.html", "", "width=800, height=800");
+}
+	var slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot");
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1}    
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	  setTimeout(showSlides, 5000); // Change image every 2 seconds
+	}
+</script>
+</html>

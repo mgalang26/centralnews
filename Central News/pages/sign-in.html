@@ -1,0 +1,117 @@
+<html>
+ <head>
+	<title>Bio Data</title>
+	<meta http-equiv="refresh" content="">
+	<style>
+		body{
+			background: #ccc;
+			height: 100px;
+			margin:0px;
+			background-attachment: fixed;
+		}
+		.form-container{
+			background: #fff;
+			padding: 1em;
+			margin: 1em;
+		}
+		form{
+			color: #f00;
+			font-family: Arial;
+			font-size: 20px;
+			font-weight: bold;
+			font-style:italic;
+			height:900px;
+		}
+
+		h1{
+			color: #f00;
+			font-family: Arial;
+			font-size: 60px;
+			font-weight: bold;
+			font-style:italic;
+		}
+		input[type=text] {
+ 		 width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0px 4px 4px;
+}
+input[type=text]:focus {
+  background-color: #222;
+color: white;
+}
+input{
+	border-radius: 25px;
+}
+
+
+	</style>
+ </head>
+ <body>
+	<div class="form-container">
+	<div><h1>Sign up for more PNC NEWS</h1></div>
+	<form action="../forms/sign-in.php">
+		Last Name: <input type="text" id="fname" name="lname" value="Last Name"><br>
+		First Name: <input type="text" id="fname" name="fname" value="First Name"><br>
+		Middle Name: <input type="text" id="fname" name="mname" value="Middle Name"><br>
+		Birth Date: <input style="width: 100%;
+			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			  border: none;
+  box-shadow: 0px 4px 4px;
+  			outline: none;"
+		type="date" id="fname" name="age" value="Age"><br>
+		Age: <input style="width: 100%;
+			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			  border: none;
+  box-shadow: 0px 4px 4px;
+  			outline: none;"
+		type="number" id="fname" name="age" value="00"><br><br>
+		Civil Status: <br>
+			<input type="radio" id="single" name="single">Single<br>
+			<input type="radio" id="married" name="married">Married<br>
+			<input type="radio" id="widowed" name="widowed">Widowed<br><br>
+		Nationality: <select id="nationality"
+			style="
+			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+ 			  border: none;
+  box-shadow: 0px 4px 4px;
+  			outline: none; border-radius: 25px;">
+		<option value="au">Filipino</option>
+  		<option value="ca">American</option>
+ 		<option value="usa">Others...</option>
+		</select>
+		<br>
+		Number of Siblings: <input style="width: 100%;
+			padding: 12px 20px;
+  			margin: 8px 0;
+  			box-sizing: border-box;
+  			  border: none;
+ 			 box-shadow: 0px 4px 4px;
+  			outline: none;"
+		type="number" id="nosib" name="nosib" value="0"><br>
+		Occupation: <input type="text" id="occ" name="occ" value="Nature of Work"><br>
+		Place of Work: <input type="text" id="pow" name="pow" value="Work Address"><br><br>
+
+
+		<input type="submit" style="width: 100%;
+ 		 padding: 12px 20px;
+ 		 margin: 8px 0;
+ 		 box-sizing: border-box;
+  		border: 1px solid #555;
+  		outline: none; border-radius: 25px;">
+
+
+	</form>
+	</div>
+	
+ </body>
+</html>
